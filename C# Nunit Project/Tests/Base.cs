@@ -16,6 +16,7 @@ namespace C__Nunit_Project.Tests
              driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://crio-qkart-frontend-qa.vercel.app/login");
             driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait=TimeSpan.FromSeconds(5);
 
         }
         [TearDown]
