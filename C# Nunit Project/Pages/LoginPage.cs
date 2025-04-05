@@ -10,6 +10,7 @@ namespace C__Nunit_Project.Pages
 {
     public class LoginPage
     {
+        
         [FindsBy(How = How.Id, Using = "username")]
         private IWebElement Username { get; set; }
 
@@ -21,6 +22,7 @@ namespace C__Nunit_Project.Pages
 
         public LoginPage(IWebDriver driver)
         {
+           
             PageFactory.InitElements(driver, this);
         }
 
