@@ -17,7 +17,7 @@ namespace C__Nunit_Project.Pages
         [FindsBy(How = How.Id, Using = "password")]
         private IWebElement Password { get; set; }
 
-        [FindsBy(How = How.Id, Using = "(//button)[2]")]
+        [FindsBy(How = How.XPath, Using = "(//button)[2]")]
         private IWebElement LoginButton { get; set; }
 
         public LoginPage(IWebDriver driver)

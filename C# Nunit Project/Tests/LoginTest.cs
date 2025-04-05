@@ -9,21 +9,17 @@ using System.Threading.Tasks;
 
 namespace C__Nunit_Project.Tests
 {
-    public class LoginTest
+    public class LoginTest : Base
     {
         [Test]
         public void TestLogin()
         {
             // Arrange
-            IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://crio-qkart-frontend-qa.vercel.app/login");
-            LoginPage loginPage = new LoginPage(driver);
+             LoginPage loginPage = new LoginPage(driver);
             // Act
             loginPage.Login("Admin10000", "Admin10000");
-            // Assert
-            //Assert.IsTrue(driver.Url.Contains("dashboard"));
-            // Cleanup
-            driver.Quit();
+           
+           
         }
     }
 }
