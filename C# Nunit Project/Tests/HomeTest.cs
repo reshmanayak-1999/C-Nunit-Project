@@ -1,6 +1,5 @@
 ﻿using C__Nunit_Project.Pages;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace C__Nunit_Project.Tests
 {
-    public class LoginTest : Base
+    public class HomeTest : Base
     {
+        // private static IWebDriver driver;
         [Test]
-        public void TestLogin()
+      public void HomePageTest()
         {
-           
-             LoginPage loginPage = new LoginPage(driver);
-            loginPage.Login("Admin10000", "Admin10000");
-           
-           
+            LoginPage loginPage = new LoginPage(driver);
+            loginPage.Login();
         }
+        
+         
     }
 }
