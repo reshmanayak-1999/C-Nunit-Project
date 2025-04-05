@@ -10,8 +10,10 @@ using System.Threading.Tasks;
 
 namespace C__Nunit_Project.Tests
 {
-    public class LoginTest
+
+ 
     
+    public class LoginTest : Base
     {
        private  ConfigReader data;
         private string username;
@@ -19,8 +21,7 @@ namespace C__Nunit_Project.Tests
         [Test]
         public void TestLogin()
         {
-            
-            // Arrange
+
             IWebDriver driver = new ChromeDriver();
              data = new ConfigReader();
              username = data.GetConfig().Username;
@@ -33,6 +34,9 @@ namespace C__Nunit_Project.Tests
             //Assert.IsTrue(driver.Url.Contains("dashboard"));
             // Cleanup
             driver.Quit();
+
+           
+
         }
     }
 }
