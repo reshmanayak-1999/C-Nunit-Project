@@ -26,4 +26,15 @@
     <Using Include="NUnit.Framework" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Driver\" />
+    <Folder Include="Commons\" />
+    <Folder Include="Report\" />
+    <Folder Include="Screenshots\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Tests\" />
+    <Folder Include="Pages\" />
+  </ItemGroup>
+
 </Project>
