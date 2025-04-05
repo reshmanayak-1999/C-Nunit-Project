@@ -26,7 +26,7 @@ namespace C__Nunit_Project.Tests
         driver.Navigate().GoToUrl(data.GetConfig().Baseurl);
             LoginPage loginPage = new LoginPage(driver);
             // Act
-            loginPage.Login("Admin10000", "Admin10000");
+            loginPage.Login(username,password);
             // Assert
             //Assert.IsTrue(driver.Url.Contains("dashboard"));
             // Cleanup
