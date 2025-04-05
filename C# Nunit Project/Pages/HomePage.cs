@@ -19,7 +19,7 @@ namespace C__Nunit_Project.Pages
         }
 
         // Page Elements
-        [FindsBy(How = How.XPath, Using = "//input[@name='search']")]
+        [FindsBy(How = How.XPath, Using = "//input[@name='search']/../input")]
         private IWebElement txtSearchBox;
 
         [FindsBy(How = How.XPath, Using = "//input[@name='search']/../div")]
