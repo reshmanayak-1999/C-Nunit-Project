@@ -10,10 +10,7 @@ using System.Threading.Tasks;
 
 namespace C__Nunit_Project.Tests
 {
-
- 
-    
-    public class LoginTest : Base
+    public class LoginTest
     {
        private  ConfigReader data;
         private string username;
@@ -29,14 +26,11 @@ namespace C__Nunit_Project.Tests
         driver.Navigate().GoToUrl(data.GetConfig().Baseurl);
             LoginPage loginPage = new LoginPage(driver);
             // Act
-            loginPage.Login(username, password);
+            loginPage.Login("Admin10000", "Admin10000");
             // Assert
             //Assert.IsTrue(driver.Url.Contains("dashboard"));
             // Cleanup
             driver.Quit();
-
-           
-
         }
     }
 }
