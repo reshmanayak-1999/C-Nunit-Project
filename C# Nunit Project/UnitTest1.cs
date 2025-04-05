@@ -12,5 +12,6 @@ namespace C__Nunit_Project
         {
             Assert.Pass();
         }
+
     }
 }
