@@ -11,6 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="allure-report\**" />
+    <EmbeddedResource Remove="allure-report\**" />
+    <None Remove="allure-report\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Reshma\.nuget\packages\allure.commons\3.5.0.73\contentFiles\any\netstandard2.0\allureConfig.Template.json" />
+    <Content Remove="C:\Users\Reshma\.nuget\packages\allure.net.commons\2.12.1\contentFiles\any\netstandard2.0\allureConfig.Template.json" />
     <Content Remove="C:\Users\User\.nuget\packages\allure.commons\3.5.0.73\contentFiles\any\netstandard2.0\allureConfig.Template.json" />
     <Content Remove="C:\Users\User\.nuget\packages\allure.net.commons\2.12.1\contentFiles\any\netstandard2.0\allureConfig.Template.json" />
   </ItemGroup>
@@ -40,7 +48,7 @@
   <ItemGroup>
     <Folder Include="Driver\" />
     <Folder Include="Commons\" />
-    <Folder Include="Report\" />
+    <Folder Include="allure-results\" />
     <Folder Include="Resources\" />
     <Folder Include="Screenshots\" />
   </ItemGroup>
