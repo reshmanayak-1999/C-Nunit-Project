@@ -27,6 +27,10 @@ namespace C__Nunit_Project.Pages
 
         [FindsBy(How = How.XPath, Using = "//button[contains(text(),'Add to cart')]")]
         private IWebElement btnAddToCart;
+
+        [FindsBy(How = How.XPath, Using = "//button[.='Checkout']")]
+        private IWebElement btnCheckout;
+
         // Search product
         public void SearchProduct(string productName)
         {
@@ -36,6 +40,10 @@ namespace C__Nunit_Project.Pages
         public void AddProductToCart()
         {
             btnAddToCart.Click();
+        }
+        public void ClickOnCheckout()
+        {
+            btnCheckout.Click();
         }
     }
 
